@@ -1,0 +1,36 @@
+.dark {
+    background-color: #333;
+    background-color: #083344;
+    --background-color: #083344;
+
+
+    color: #fff;
+    color: #ecfeff;
+    --fontcolor: #ecfeff;
+    --border: blue;
+    --border: #06b6d4;
+
+    --icon-hover: #06b6d4;
+
+    --secondary-color: #06b6d4;
+
+    --third-color: #67e8f9;
+}
+
+.light {
+    background-color: #fff;
+    background-color: #ecfeff;
+    --background-color: #ecfeff;
+
+    color: #333;
+    color: #083344;
+    --fontcolor: #083344;
+
+    --border: #06b6d4;
+
+    --icon-hover: #06b6d4;
+
+    --secondary-color: #06b6d4;
+
+    --third-color: #06b6d4;
+}   
