@@ -125,7 +125,34 @@ section {
   font-style: italic;
   color: var(--secondary-color);
   padding-bottom: 1vh;
+
+
+  --background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+
+  background-image: linear-gradient(90deg, rgba(6,182,212,1) 0%, rgba(173,0,255,1) 25%, rgba(6,182,212,1) 50%, rgba(173,0,255,1) 75%, rgba(6,182,212,1) 100%);
+  background-size: auto auto;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  --display: inline-block;
 }
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 .homepage .socials {
   display: flex;
@@ -172,7 +199,9 @@ section {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
+
+  align-items: center;
   gap: 2vw;
 }
 
@@ -184,7 +213,6 @@ section {
   animation: reveal .5s forwards var(--time);
 
   text-underline-offset: 4px;
-
 }
 
 @keyframes reveal {
@@ -202,8 +230,7 @@ section {
   display: flex;
   flex-direction: column;
   --align-items: center;
-
-  margin-left: 25%;
+  --margin-left: 25%;
 
   gap: 1vh;
 
@@ -255,7 +282,7 @@ section {
 }
 
 .about .emph {
-  color: var(--third-color)
+  color: var(--bluepurple);
 }
 
 .about a {
@@ -327,7 +354,35 @@ section {
 
 .contact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
+  --justify-content: center;
+  align-items: center;
+}
+
+.contact h1 {
+  font-size: 2.5vw;
+  color: var(--secondary-color);
+  padding-bottom: 1vh;
+
+
+  --background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+
+  background-image: linear-gradient(90deg, rgba(173,0,255,1) 0%, rgba(6,182,212,1) 100%);
+  background-size: auto auto;
+  background-size: 100% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  --animation: textclip 10s linear infinite;
 }
 
 .contact-form {
@@ -341,28 +396,38 @@ section {
   height: min-content;
 }
 
-.contact-form label {
-  padding-left: .1em;
-}
-
 .contact-form input {
   all: unset;
 
-  border: 2px solid var(--border);
+  border: 2px solid var(--forth-color);
+
   background-color: var(--background-color);
   padding: .5em;
   color: var(--fontcolor);
   border-radius: .5vw;
+}
+
+.contact-form label {
+  padding-left: .1em;
+}
+
+.contact-form input:focus {
+  border: 2px solid var(--border);
 }
 
 .contact-form textarea {
   all: unset;
 
-  border: 2px solid var(--border);
+  border: 2px solid var(--forth-color);
+
   background-color: var(--background-color);
   padding: .5em;
   color: var(--fontcolor);
   border-radius: .5vw;
+}
+
+.contact-form textarea:focus {
+  border: 2px solid var(--border);
 }
 
 .contact-form button {
@@ -393,6 +458,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: .5vh;
+
+  position: relative;
 }
 
 .contact-email {

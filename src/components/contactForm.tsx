@@ -30,10 +30,10 @@ function ContactForm() {
         <div className="contact-form">
             <div className="contact-name">
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" 
-                    placeholder="Jane Doe"
+                <input type="text" id="name"
                     value={name}
                     onChange={handleName}
+                    placeholder="Jane Doe"
                 />
             </div>
             <div className="contact-email">

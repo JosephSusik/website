@@ -83,6 +83,7 @@ function Homepage() {
         </section>
 
         <section className="contact" id="contact">
+            <h1>Get in touch!</h1>
             <ContactForm />
         </section>
         </>
