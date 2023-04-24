@@ -7,8 +7,9 @@
   --body-padding: 10vw;
 
   transition: background .5s;
-}
 
+  overscroll-behavior: none;
+}
 
 nav {
   display: grid;

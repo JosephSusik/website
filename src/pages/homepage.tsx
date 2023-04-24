@@ -80,6 +80,19 @@ function Homepage() {
 
         <section className="projects" id="projects">
             <h1>PROJECTS</h1>
+            <h2>School experiece</h2>
+            <ul>
+                <li>Discrete Mathematics</li>
+                <li>Linear Algebra</li>
+                <li>Calculus</li>
+
+                <li>Algorithms and Data Structures</li>
+                <li>Operating Systems</li>
+                <li>Database Systems</li>
+                <li>Computer Communications and Networks</li>
+            </ul>
+
+            <h2>React playground</h2>
         </section>
 
         <section className="contact" id="contact">
