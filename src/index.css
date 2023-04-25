@@ -292,6 +292,15 @@ section {
   cursor: pointer;
 }
 
+.projects {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 4vh;
+
+  height: max-content;
+  --min-height: 76vh;
+}
+
 .projects .school {
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -300,6 +309,8 @@ section {
   border-radius: .5vw;
   padding: .6vw;
   place-items: center;
+
+  height: max-content;
 
   gap: 1.4vh;
 }
@@ -319,6 +330,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: .8vh;
+}
+
+.projects .school-classes a {
+  all: unset;
+  width: max-content;
 }
 
 .projects .school-classes li {
@@ -359,6 +375,16 @@ section {
 .projects .school button:hover {
   cursor: pointer;
   color: var(--secondary-color);
+}
+
+.projects .react-playground {
+  border: 1px solid var(--border);
+  border-radius: .5vw;
+  padding: .6vw;
+
+  display: flex;
+
+  justify-content: center;
 }
 
 .dark-mode-toggle {

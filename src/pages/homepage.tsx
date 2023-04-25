@@ -79,28 +79,28 @@ function Homepage() {
         </section>
 
         <section className="projects" id="projects">
-            <h1>PROJECTS</h1>
             <div className="school">
-                <h2>School experience</h2>
+                <h2>Finished University Courses</h2>
                 <div className="school-classes">
                     <ul>
-                        <li><FaLocationArrow className="arr"/>Algorithms and Data Structures</li>
-                        <li><FaLocationArrow className="arr"/>Computer Communications and Networks</li>
+                        <a href="https://www.fit.vut.cz/study/course/IAL/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Algorithms and Data Structures</li></a>
+                        <a href="https://www.fit.vut.cz/study/course/IPK/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Computer Communications and Networks</li></a>
                     </ul>
                     <ul>
-                        <li><FaLocationArrow className="arr"/>Operating Systems</li>
-                        <li><FaLocationArrow className="arr"/>Database Systems</li>
+                        <a href="https://www.fit.vut.cz/study/course/IOS/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Operating Systems</li></a>
+                        <a href="https://www.fit.vut.cz/study/course/IDS/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Database Systems</li></a>
                     </ul>
                     <ul>
-                        <li><FaLocationArrow className="arr"/>Discrete Mathematics</li>
-                        <li><FaLocationArrow className="arr"/>Linear Algebra</li>                                
+                        <a href="https://www.fit.vut.cz/study/course/IDM/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Discrete Mathematics</li></a>
+                        <a href="https://www.fit.vut.cz/study/course/ILG/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Linear Algebra</li></a>                           
                     </ul>
                 </div>
                 <button>See more</button>
             </div>
 
-
-            <h2>React playground</h2>
+            <div className="react-playground">
+                <h2>React playground</h2>
+            </div>
         </section>
 
         <section className="contact" id="contact">
