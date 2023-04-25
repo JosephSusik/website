@@ -82,13 +82,14 @@ function Homepage() {
             <h1>PROJECTS</h1>
             <h2>School experiece</h2>
             <ul>
-                <li>Discrete Mathematics</li>
-                <li>Linear Algebra</li>
-
                 <li>Algorithms and Data Structures</li>
+                <li>Computer Communications and Networks</li>
+ 
                 <li>Operating Systems</li>
                 <li>Database Systems</li>
-                <li>Computer Communications and Networks</li>
+ 
+                <li>Discrete Mathematics</li>
+                <li>Linear Algebra</li>                                
             </ul>
 
             <h2>React playground</h2>
