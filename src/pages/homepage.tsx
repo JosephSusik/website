@@ -93,6 +93,7 @@ function Homepage() {
                 <li>Discrete Mathematics</li>
                 <li>Linear Algebra</li>                                
             </ul>
+            <p>See more</p>
 
             <h2>React playground</h2>
         </section>
