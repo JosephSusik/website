@@ -83,7 +83,7 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-nav li:after {
+nav li a:after {
   content: '';
   display: block;
   margin: auto;
@@ -94,7 +94,7 @@ nav li:after {
   transition: width .5s ease, background-color .5s ease;
 }
 
-nav li:hover:after {
+nav li a:hover:after {
   width: 100%;
 }
 
@@ -245,6 +245,8 @@ section {
 
   opacity: 0;
   animation: reveal .5s forwards var(--time);
+
+  user-select: none;
 }
 
 .arr {
@@ -269,11 +271,6 @@ section {
   width: min-content;
 }
 
-.about div li:hover {
-  color: var(--secondary-color);
-  cursor: pointer;
-}
-
 .about .intro {
   font-size: 3vw;
 }
@@ -293,6 +290,75 @@ section {
 
 .about a:hover {
   cursor: pointer;
+}
+
+.projects .school {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+
+  border: 1px solid var(--border);
+  border-radius: .5vw;
+  padding: .6vw;
+  place-items: center;
+
+  gap: 1.4vh;
+}
+
+.projects .school-classes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+
+  width: 100%;
+
+  place-items: center;
+}
+
+.projects .school-classes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .8vh;
+}
+
+.projects .school-classes li {
+  display: flex;
+  gap: 1vw;
+  width: max-content;
+  user-select: none;
+
+  font-size: 1.1vw;
+}
+
+.projects .school-classes li:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.projects .school button {
+  all: unset;
+  user-select: none;
+  color: var(--fontcolor);
+}
+
+.projects .school button:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 0px;
+  width: 0px;
+  padding-bottom: 0.1vh;
+  border-bottom: 1px solid var(--border);
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.projects .school button:hover:after {
+  width: 100%;
+}
+
+.projects .school button:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .dark-mode-toggle {

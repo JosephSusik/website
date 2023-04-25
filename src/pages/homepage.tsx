@@ -80,20 +80,25 @@ function Homepage() {
 
         <section className="projects" id="projects">
             <h1>PROJECTS</h1>
-            <h2>School experiece</h2>
-            <ul>
-                <li>Algorithms and Data Structures</li>
-                <li>Computer Communications and Networks</li>
-            </ul>
-            <ul>
-                <li>Operating Systems</li>
-                <li>Database Systems</li>
-            </ul>
-            <ul>
-                <li>Discrete Mathematics</li>
-                <li>Linear Algebra</li>                                
-            </ul>
-            <p>See more</p>
+            <div className="school">
+                <h2>School experience</h2>
+                <div className="school-classes">
+                    <ul>
+                        <li><FaLocationArrow className="arr"/>Algorithms and Data Structures</li>
+                        <li><FaLocationArrow className="arr"/>Computer Communications and Networks</li>
+                    </ul>
+                    <ul>
+                        <li><FaLocationArrow className="arr"/>Operating Systems</li>
+                        <li><FaLocationArrow className="arr"/>Database Systems</li>
+                    </ul>
+                    <ul>
+                        <li><FaLocationArrow className="arr"/>Discrete Mathematics</li>
+                        <li><FaLocationArrow className="arr"/>Linear Algebra</li>                                
+                    </ul>
+                </div>
+                <button>See more</button>
+            </div>
+
 
             <h2>React playground</h2>
         </section>
