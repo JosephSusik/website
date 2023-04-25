@@ -84,10 +84,12 @@ function Homepage() {
             <ul>
                 <li>Algorithms and Data Structures</li>
                 <li>Computer Communications and Networks</li>
- 
+            </ul>
+            <ul>
                 <li>Operating Systems</li>
                 <li>Database Systems</li>
- 
+            </ul>
+            <ul>
                 <li>Discrete Mathematics</li>
                 <li>Linear Algebra</li>                                
             </ul>
