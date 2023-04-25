@@ -84,7 +84,6 @@ function Homepage() {
             <ul>
                 <li>Discrete Mathematics</li>
                 <li>Linear Algebra</li>
-                <li>Calculus</li>
 
                 <li>Algorithms and Data Structures</li>
                 <li>Operating Systems</li>
