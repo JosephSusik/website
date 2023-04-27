@@ -55,14 +55,14 @@ function Homepage() {
         <section className="about" id="about">
             <article ref={ref1}>
                 <h1 className="intro">Hello there!</h1>  <br />
-                <h1> My name is <span className="emph">Joseph</span>, and I am a {age_now}-year-old computer science student from the Czech Republic.</h1> <br />
-                <h1>I have always had a passion for <span className="emph">problem solving</span>, and I am currently studying <a href="https://www.fit.vut.cz/.en" target="blank">Faculty of Information Technology, BUT</a>.</h1> <br />
-                <h1>I am particularly interested in <span className="emph">web development</span> and creating innovative and engaging user experiences, and I am constantly <span className="emph">trying to improve my skills</span>.</h1> <br />
-
-                <h1>As a determined and <span className="emph">hardworking</span> individual, I am committed to achieving my career goals 
-                    and becoming a great frontend developer. </h1> <br />
-                <h1>I believe that my love for coding, combined with my <span className="emph">dedication to learning</span> and growing as a developer,
-                    will help me succeed in this exciting and rapidly-evolving field.</h1>      
+                <p> My name is <span className="emph">Joseph</span>, and I am a {age_now}-year-old computer science student from the Czech Republic. <br />
+                I have always had a passion for <span className="emph">problem solving</span>, and I am currently studying <a href="https://www.fit.vut.cz/.en" target="blank">Faculty of Information Technology, BUT</a>. <br />
+                I am particularly interested in <span className="emph">web development</span> and creating innovative and engaging user experiences, and I am constantly <span className="emph">trying to improve my skills</span>. <br />
+                <br />
+                As a determined and <span className="emph">hardworking</span> individual, I am committed to achieving my career goals 
+                and becoming a great frontend developer. <br />
+                I believe that my love for coding, combined with my <span className="emph">dedication to learning</span> and growing as a developer,
+                will help me succeed in this exciting and rapidly-evolving field.</p>       
             </article>
             <div>
                 <h1>Tech Stack</h1>
@@ -134,3 +134,16 @@ function useIsInViewport(ref:any) {
   
     return isIntersecting;
 }
+
+
+/*
+<h1 className="intro">Hello there!</h1>  <br />
+<h1> My name is <span className="emph">Joseph</span>, and I am a {age_now}-year-old computer science student from the Czech Republic.</h1> <br />
+<h1>I have always had a passion for <span className="emph">problem solving</span>, and I am currently studying <a href="https://www.fit.vut.cz/.en" target="blank">Faculty of Information Technology, BUT</a>.</h1> <br />
+<h1>I am particularly interested in <span className="emph">web development</span> and creating innovative and engaging user experiences, and I am constantly <span className="emph">trying to improve my skills</span>.</h1> <br />
+
+<h1>As a determined and <span className="emph">hardworking</span> individual, I am committed to achieving my career goals 
+    and becoming a great frontend developer. </h1> <br />
+<h1>I believe that my love for coding, combined with my <span className="emph">dedication to learning</span> and growing as a developer,
+will help me succeed in this exciting and rapidly-evolving field.</h1>      
+*/
