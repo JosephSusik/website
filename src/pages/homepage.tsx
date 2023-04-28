@@ -4,8 +4,16 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
 import ContactForm from "../components/contactForm";
+import CustomPopup from "../components/popup";
 
 function Homepage() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const TogglePopup = () => {
+        setIsOpen(!isOpen);
+        useImperativeDisableScroll( {element: document.body, disabled: !isOpen})
+    }
 
     const ref1 = useRef(null);
     const ref2 = useRef(null);
@@ -56,7 +64,7 @@ function Homepage() {
             <article ref={ref1}>
                 <h1 className="intro">Hello there!</h1>  <br />
                 <p> My name is <span className="emph">Joseph</span>, and I am a {age_now}-year-old computer science student from the Czech Republic. <br />
-                I have always had a passion for <span className="emph">problem solving</span>, and I am currently studying <a href="https://www.fit.vut.cz/.en" target="blank">Faculty of Information Technology, BUT</a>. <br />
+                I have always had a passion for <span className="emph">problem solving</span>, and I am currently studying <a href="https://www.fit.vut.cz/.en" target="blank">Faculty of Information Technology, BUT</a>. <br /><br />
                 I am particularly interested in <span className="emph">web development</span> and creating innovative and engaging user experiences, and I am constantly <span className="emph">trying to improve my skills</span>. <br />
                 <br />
                 As a determined and <span className="emph">hardworking</span> individual, I am committed to achieving my career goals 
@@ -95,7 +103,8 @@ function Homepage() {
                         <a href="https://www.fit.vut.cz/study/course/ILG/.en" target="_blank" rel="noreferrer"><li><FaLocationArrow className="arr"/>Linear Algebra</li></a>                           
                     </ul>
                 </div>
-                <button>See more</button>
+                <button onClick={TogglePopup}>Show more</button>
+                {isOpen && <CustomPopup handleClose={TogglePopup}/>}
             </div>
 
             <div className="react-playground">
@@ -133,4 +142,18 @@ function useIsInViewport(ref:any) {
     }, [ref, observer]);
   
     return isIntersecting;
+}
+
+function useImperativeDisableScroll({ element, disabled }: { element: HTMLElement; disabled: boolean }) {
+    //useEffect(() => {
+        if (!element) {
+            return
+        }
+
+        element.style.overflowY = disabled ? 'hidden' : 'scroll'
+
+        return () => {
+            element.style.overflowY = 'scroll'
+        }
+    //}, [disabled])
 }
