@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import ContactForm from "../components/contactForm";
 import CustomPopup from "../components/popup";
 
@@ -10,7 +11,7 @@ function Homepage() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const TogglePopup = () => {
+    const TogglePopup = () => { 
         setIsOpen(!isOpen);
         useImperativeDisableScroll( {element: document.body, disabled: !isOpen})
     }
@@ -56,6 +57,7 @@ function Homepage() {
                     <a href="https://github.com/JosephSusik" target="blank"><FaGithub className="icon"/></a>
                     <a href="https://www.instagram.com/joseph_powerlifting/" target="blank"><FaInstagram className="icon"/></a>
                 </div>
+                <button><FaDownload /> Download CV</button>
             </div>
             <img src="./img/profile.jpg" alt="" className="profile-img" ref={ref3}/>
         </section>

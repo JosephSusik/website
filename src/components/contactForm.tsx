@@ -51,11 +51,7 @@ function ContactForm() {
                     ></textarea>
             </div>
             <div className="contact-send">
-                {ready?
                     <button><FaPaperPlane className="contact-plane" onClick={sendMail}/>&ensp;Send</button>
-                :
-                    <></>
-                }
             </div> 
         </div>
     );
