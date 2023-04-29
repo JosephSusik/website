@@ -623,13 +623,19 @@ section {
   padding-bottom: .6vw;
   padding-top: .6vw;
 
-  animation: popup 1s ease-in-out;
+  animation: popup-open 1s ease-in-out;
 }
 
-@keyframes popup {
-  0% {width: 0; max-height: 0; color: transparent;}
+@keyframes popup-open {
+  from {width: 0; max-height: 0; color: transparent;}
   50% {width: 80%; max-height: 0; }
-  100% {width: 80%; max-height: 70vh; color: inherit;}
+  to {width: 80%; max-height: 70vh; color: inherit;}
+}
+
+@keyframes popup-close {
+  from {width: 80%; max-height: 0; }
+  50% {width: 80%; max-height: 0; }
+  to {width: 0; max-height: 0;}
 }
 
 .popup .popup-classes {
