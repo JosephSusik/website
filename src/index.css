@@ -185,7 +185,7 @@ section {
   justify-content: center;
   width: max-content;
 
-  gap: 1vw;
+  gap: 8px;
 }
 
 .homepage button:hover {
@@ -392,7 +392,7 @@ section {
 .projects .school button {
   all: unset;
   user-select: none;
-  color: var(--fontcolor);
+  color: var(--secondary-color);
 
   font-size: 1.1vw;
   font-weight: 300;
@@ -415,7 +415,6 @@ section {
 
 .projects .school button:hover {
   cursor: pointer;
-  color: var(--secondary-color);
 }
 
 .projects .react-playground {
