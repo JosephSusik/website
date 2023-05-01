@@ -617,6 +617,10 @@ section {
   justify-self: center;
 }
 
+.contact-send .rdy-btn {
+  border: 2px solid var(--secondary-color)
+}
+
 .popup-box {
   position: fixed;
   background: #00000080;
