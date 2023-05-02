@@ -655,6 +655,7 @@ section {
   gap: 2vh;
   padding-bottom: .6vw;
   padding-top: .6vw;
+  overflow: hidden; /* Hide scrollbars */
 
   animation: popup-open .8s ease-in-out;
 }
