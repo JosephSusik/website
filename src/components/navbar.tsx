@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DarkModeToggle from "./darkModeToggle";
+import DarkModeToggle from "./DarkModeToggle";
 
 import { Squash as Hamburger } from 'hamburger-react'
 

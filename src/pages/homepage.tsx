@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
-import ContactForm from "../components/contactForm";
-import CustomPopup from "../components/popup";
+import ContactForm from "../components/ContactForm";
+import CustomPopup from "../components/CustomPopup";
 
 function Homepage() {
 

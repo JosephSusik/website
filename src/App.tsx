@@ -1,7 +1,7 @@
-import './darkMode.css'
+import './DarkMode.css'
 
-import Navbar from './components/navbar';
-import Homepage from './pages/homepage';
+import Navbar from './components/Navbar';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
