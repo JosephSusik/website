@@ -31,7 +31,7 @@ function Navbar() {
             <a href="#homepage" onClick={()=>closeNav()}>[JS]</a>
             <ul>
                 <li><a href="#about" onClick={()=>closeNav()}>ABOUT</a></li>
-                <li><a href="#projects" onClick={()=>closeNav()}>PROJECTS</a></li>
+                <li><a href="#projects" onClick={()=>closeNav()}>EXPERIENCE</a></li>
                 <li><a href="#contact" onClick={()=>closeNav()}>CONTACT</a></li>
             </ul>
             <DarkModeToggle />

@@ -109,8 +109,8 @@ function Homepage() {
                 {isOpen && <CustomPopup handleClose={TogglePopup}/>}
             </div>
 
-            <div className="react-playground">
-                <h2>React playground</h2>
+            <div className="github-playground">
+                <h2>Checkout my GitHub for projects</h2>
             </div>
         </section>
 
