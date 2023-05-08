@@ -1,58 +1,13 @@
-import { useEffect, useState } from "react";
-import { FaPaperPlane } from "react-icons/fa";
-
 
 function ContactForm() {
-    const [email, setEmail] = useState("");
-    const [name, setName] = useState("");
-    const [ready, setReady] = useState(false);
-
-    const handleName = (e:React.ChangeEvent<HTMLInputElement>) => {
-        setName(e.target.value)
+    const handleClick = () => {
+        navigator.clipboard.writeText("joseph.susik@gmail.com");
     }
-
-    const handleEmail = (e:React.ChangeEvent<HTMLInputElement>) => {
-        setEmail(e.target.value)
-    }
-
-    const sendMail = () => {
-        
-    }
-
-    useEffect(() => {
-        
-        name&&email? setReady(true) : setReady(false);
-
-    }, [name, email])
 
 
     return(
         <div className="contact-form">
-            <div className="contact-name">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name"
-                    value={name}
-                    onChange={handleName}
-                    placeholder="Jane Doe"
-                />
-            </div>
-            <div className="contact-email">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" 
-                    placeholder="jane.doe@gmail.com"
-                    value={email}
-                    onChange={handleEmail}
-                />
-            </div>
-            <div className="contact-text">
-                <label htmlFor="text">Your message</label>
-                <textarea name="" id="text" 
-                    placeholder="Text of your message"
-                    ></textarea>
-            </div>
-            <div className="contact-send">
-                    <button className={ready? "rdy-btn" : ""}><FaPaperPlane className="contact-plane" onClick={sendMail}/>&ensp;Send</button>
-            </div> 
+            <button onClick={handleClick}>joseph.susik@gmail.com</button>
         </div>
     );
 }

@@ -487,6 +487,7 @@ section {
 
   --justify-content: center;
   align-items: center;
+  gap: 1vh;
 }
 
 .contact h1 {
@@ -514,106 +515,23 @@ section {
   --animation: textclip 10s linear infinite;
 }
 
-.contact-form {
-  display: grid;
-  grid-template-rows: auto auto auto;
-
-  gap: 1.5vh;
-
-  width: 50%;
-
-  height: min-content;
-}
-
-.contact-form input {
+.contact-form button{
   all: unset;
 
-  border: 2px solid var(--forth-color);
+  border: 1px solid var(--border);
+  user-select: none;
 
-  background-color: var(--background-color);
-  padding: .5em;
-  color: var(--fontcolor);
-  border-radius: .5vw;
-  border-radius: 5px;
-}
-
-.contact-form label {
-  padding-left: .1em;
-}
-
-.contact-form input:focus {
-  border: 2px solid var(--border);
-}
-
-.contact-form textarea {
-  all: unset;
-
-  border: 2px solid var(--forth-color);
-
-  background-color: var(--background-color);
-  padding: .5em;
-  color: var(--fontcolor);
-  border-radius: .5vw;
-  border-radius: 5px;
-}
-
-.contact-form textarea:focus {
-  border: 2px solid var(--border);
-}
-
-.contact-form button {
-  all: unset;
-  
-  border: 2px solid var(--forth-color);
-  background-color: var(--background-color);
-  padding: .5em;
-  color: var(--fontcolor);
-  color: var(--forth-color);
-  border-radius: .5vw;
+  padding: 1vw 2vw;
   border-radius: 5px;
 
-  width: 5em;
-  height: 1.2em;
-    
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1vw;
 
-  user-select: none;
 }
 
 .contact-form button:hover {
   cursor: pointer;
-  color: var(--border); 
-  border: 2px solid var(--border);
-}
-
-.contact-name {
-  display: flex;
-  flex-direction: column;
-  gap: .5vh;
-
-  position: relative;
-}
-
-.contact-email {
-  display: flex;
-  flex-direction: column;
-  gap: .5vh;
-}
-
-.contact-text {
-  display: flex;
-  flex-direction: column; 
-  gap: .5vh;
-}
-
-.contact-send {
-  justify-self: center;
-}
-
-.contact-send .rdy-btn {
-  border: 2px solid var(--secondary-color)
 }
 
 .popup-box {
